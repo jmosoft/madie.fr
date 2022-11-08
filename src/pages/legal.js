@@ -7,7 +7,7 @@ import Seo from '../components/seo'
 const LegalPage = () => {
   return (
     <Layout>
-         <div className="flex flex-col space-y-4 justify-start mx-auto mt-20 px-8">
+         <div className="pb-8 flex flex-col space-y-4 flex-wrap justify-between mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 ">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900">
                 MENTIONS LÉGALES
             </h1>
