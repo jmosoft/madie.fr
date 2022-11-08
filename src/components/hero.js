@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
-import mockup from "../images/mockup.png"
 import badge from "../images/store-badge.svg"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Hero = () => {
 
@@ -14,11 +14,22 @@ const Hero = () => {
         </h1>
       </div>
       <div className='lg:w-1/2  mt-5'>
-        <img src={mockup} ></img>
+      <span className="sr-only">MADIE</span>
+        <StaticImage 
+          src="../images/mockup.png"
+          alt="Images de l'application" 
+          placeholder="blurred"  
+        />
       </div>
       <div className="lg:w-full flex justify-center  mt-5">
         <Link to='https://apps.apple.com/us/app/madie/id1591237213'>
-          <img src={badge} className="object-fit w-48" />
+          <img 
+          src={badge} 
+          className="object-fit" 
+          width={192}
+          height={60}
+          alt="Boutons de telechargement de l'application ios" 
+          />
         </Link>
     </div>
   </div>
